@@ -1,9 +1,13 @@
 
 /* Global properties ======================================================== */
 body { 
-	background:#6f599c;
-	background-image:url(../images/bg.jpg) ;
+	background-image:linear-gradient(130deg, rgba(127,47,255,0.4) 0%, rgba(214, 60, 255, 0.4) 100%), url(bg.jpg) ;
+	/*background-color: rgba(23, 255, 140, 0.9); /* 设置背景颜色的透明度 */*/
 	text-align:left;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;//图片大小
+	background-attachment: fixed;//背景图片不随内容滚动
+	opacity: 0.2;
 }
 
 /* Global Structure ============================================================= */
@@ -26,7 +30,7 @@ body {
 	
 #myContent{
 	position:absolute;
-	left:80px;
+	left:217px;
 	top:130px;
 	overflow:hidden;
 	text-shadow: 2px 3px 3px #000; 
@@ -40,7 +44,7 @@ body {
 #container{
 	overflow:hidden;
 	position:absolute;
-	left:630px;
+	left:830px;/*630px;*/
 	top:220px;
 	width:650px;
 	opacity:0;
@@ -48,8 +52,9 @@ body {
 }
 
 #title{
-	position:absolute;
-	left:28%;
+	/*position:absolute;*/
+	/*left:28%;*/
+	text-align: center;
 	top:0px;
 	padding:10px;
 	overflow:hidden;
@@ -73,8 +78,8 @@ body {
 
 #time{
 	position:absolute;
-	left:750px;
-	top:400px;
+	left:830px;
+	top:610px;
 	overflow:hidden;
 }
 
@@ -98,7 +103,7 @@ body {
 }
 .roundabout-moveable-item {
 	width: 350px;
-	height: 222px;
+	height: 350px; /*222px;*/
 	cursor: pointer;
 	border:3px solid #ccc;
 	border:3px solid rgba(0, 0, 0, 0.08);

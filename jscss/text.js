@@ -29,9 +29,9 @@ function writeContent(init){
 	}
 
 	if(charIndex<=stringLength){
-		setTimeout('writeContent(false)',140);
+		setTimeout('writeContent(false)',20);
 	}else{
-		blinkSpan();
+		// blinkSpan();
 	}  
 }
 
@@ -43,5 +43,5 @@ function blinkSpan(){
 		currentStyle='inline';
 	}
 	document.getElementById('blink').style.display = currentStyle;
-	setTimeout('blinkSpan()',100);
+	// setTimeout('blinkSpan()',50);
 }
